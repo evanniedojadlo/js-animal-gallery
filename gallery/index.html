@@ -86,18 +86,37 @@
       //    alert("Yup, it's a button.");
       //});
 
-    $(".filter-button").on("click", function(){
-        $("#monkey").addClass("active");
-        $(".monkey").hide();
-});
+// The following is not working -- likely needs conditionals
+//    $(".filter-button").on("click", function(){
+//        $("#monkey").addClass("active");
+//        $(".monkey").hide();
+//});
 
 
-    $(".filter-button").on("click", function(){
-        $("#dog").addClass("active");
-        $(".dog").hide();
-});
+//    $(".filter-button").on("click", function(){
+//        $("#dog").addClass("active");
+//        $(".dog").hide();
+//});
+
+
+//Current working version
+
+ $('#monkey').on('click', function() {
+   $('.monkey').toggle();
+ });
+
+ $('#dog').on('click', function() {
+   $('.dog').toggle();
+ });
+
+ $('#cat').on('click', function() {
+   $('.cat').toggle();
+ });
 
     </script>
+
+
+
 
     </body>
 </html>
